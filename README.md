@@ -35,8 +35,8 @@ Keywords: Synthetic image generation; Microalgae; FastGAN; DDIM; VQVAE; PixelCNN
 
 **Data_Abs_Day_Colour_index_Normalised (3V-Input)** => Contains the combined data for all batches (3) and days (2, 4, 6, 8, 10, & 12) when using various image capturing devices (digital camera/ smartphone), type of colour variables (colour models such as RGB, HSL, & CMYK) with additonal 'Day' (period),  'Abs' (absorbance), and lightning conditions (covered [not exposed to light]/ light disturbed [non_covered])
 
-# e) _Spirulina platensis_ biomass & extracted CPC image dataset
-The google drive [https://drive.google.com/drive/folders/1dXDUHCD9nTJaF0CFyxqUkHKZH8Ko1XjF?usp=drive_link] contains the cropped image dataset of _Spirulina platensis_ biomass & extracted CPC grown under BG-11 medium in the period of 12 days. Subsequently, each day will contain a subfolder of both image capturing devices such as smartphone [Model => Iphone_13_Pro_Max] and digital camera [Model => Nikon_Z50]. Each image capturing device will contain a subfolder of covered [images taken without any light disturbances] and light_disturbed [images taken under light disturbed condition]. The experiment is conducted for 3 batches. The image dataset is publicly available for academic and research purposes.
+# e) Original & Synthetic microalgae image datasets
+The google drive [https://drive.google.com/drive/folders/1QkzOmOO_flF0Y4V9MKVSmJOiIxR3vBM7?usp=sharing] contains microalgae original and synthetic image datasets for FID evaluation, t-SNE2D plot evaluation, and classification task. The image dataset is publicly available for academic and research purposes.
 
 # Referencing and citation
-If you find the prediction and analysis of C-phycocyanin (CPC) concentration as well as the image dataset useful in your research, please consider citing: Based on the DOI: *********Not published yet***********
+If you find the generation of synthetic microalgae images based on generative models (DDIM, FastGAN, and G-PixelCNN-VQVAE) useful in your research, please consider citing: Based on the DOI: *********Not published yet***********
