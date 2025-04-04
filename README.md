@@ -32,7 +32,7 @@ Keywords: ************* Not available at the moment ********************
 
 **Train_Val_Graph_Confusion_matrix_Submit** => Python script to generate training and validation accuracy and loss learning curves along with confusion matrix
 
-# c) Original & Synthetic microalgae image datasets
+# d) Original & Synthetic microalgae image datasets
 The google drive [https://drive.google.com/drive/folders/1QkzOmOO_flF0Y4V9MKVSmJOiIxR3vBM7?usp=sharing] contains microalgae original (1024 x 1024 pixels) and synthetic image datasets (256 x 256 pixels). Original and synthetic microalgae datasets cater to FID evaluation, t-SNE2D plot evaluation, and classification tasks. All training, validation, and testing results are also available here. The image dataset is publicly available for academic and research purposes.
 
 # Referencing and citation
