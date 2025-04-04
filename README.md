@@ -2,41 +2,35 @@
 
 By Jun Wei Roy Chong, Jun Rong Brian Chong, Kuan Shiong Khoo, Huong-Yong Ting, Iwamoto Koji, Zengling Ma, Pau Loke Show
 
-Obtaining quality microalgae datasets in terms of high quality and diversity has created a significant challenge in the artificial intelligence (AI) microalgae domain. To date, the implementation of Generative AI in the image generation space has been widely explored in the medical and biological sectors. However, this approach has not been exploited in the field of microalgae biotechnology. This present research assessed various generative models such as Fast Generative Adversarial Network (FastGAN), Gated Pixel Convolutional Neural Network prior with Vector Quantised - Variational Auto Encoder (G-PixelCNN-VQVAE), and Denoising Diffusion Implicit Model (DDIM) to generate synthetic images that can capture various features of different microalgae species including Chlorella vulgaris FSP-E (C.V), Chlamydomonas reinhardtii (C.R) and Spirulina platensis (S.P). Our results showed the Frechet Inception Distance (FID) score of 32.55, 96.44 and 147.24, respectively for the conditional FastGAN, G-PixelCNN-VQVAE and DDIM. The downstream image classification task showed that training with 100% synthetic data derived from the conditional FastGAN achieved the highest validation score of 78.58%, as compared to 99.66% with the original dataset. However, when trained on the G-PixelCNN with conditional VQVAE and combined dataset, we achieved the highest validation score of 99.80%, indicating a subtle boost in performance. 
+******************* Not available at the moment ***********************
 
-Keywords: Synthetic image generation; Microalgae; FastGAN; DDIM; VQVAE; PixelCNN
+Keywords: ************* Not available at the moment ********************
 
 # Folder & Files descriptions
-# a) Machine learning, Deep learning, & Hybrid Stacking-ensemble models
+# a) CNN model development for classification task & Generative models for synthetic image synthesis
 
-**AI_models_Final** => Contains the model configuration of SVM regressor, XGBoost regressor, CNN, and Hybrid Stacking-Ensemble model [Base models (SVM, XGBoost) & meta-regressor models (RidgeCV, LinearRegression, DecisionTree, RandomForest, SVR, XGBoost)
+**Model_classification_CNN_Pytorch_Final** => Python script for the development of a custom CNN model to perform classification of original & synthetic image datasets
 
-**SVM-XGBoost-CNN-Hybrid-EL-Model_development.xlsx** => Development of all models and with detailed explanation on python code in excel file
+**Generative_models_Evaluation_Final** => Python script to generate synthetic microalgae images based on unconditional & conditional DDIM, FastGAN, and G-PixelCNN-VQVAE
 
-**SVM-XGBoost-CNN-Hybrid-EL-Model-Datasets.xlsx** => Datasets with accuracy and loss metrics derived from each model in excel file
+**Generative_models_Training_Final** => Python script to train unconditional & conditional generative models (DDIM, FastGAN, and G-PixelCNN-VQVAE)
 
 # b) Image and data pre-processing
 
-**Colour feature extraction & Data normalisation** =>  Contains the python script of colour feature extraction & data normalisation for training of ML models
+**Image_preprocessing_resize_Submit** =>  Python script for image resizing
 
-**SVM-XGBoost-Colour_feature_extraction_Data_normalisation.xlsx** => Colour (RGB, HSL, CMYK) feature extraction and Data normalisation (min-max scaler) for ML models in excel file
+**Train_Val_Test_split_Submit** => Python script to split images into training, validation, and testing folders
 
-# c) Datasets for CNN & Hybrid Stacking-ensemble models
+# c) Task evaluation and visualisation
 
-**Combined_All_Batch_Days_Camera** => Contains the combined data for all batches (3) and days (2, 4, 6, 8, 10, & 12) when using digital camera capturing device under various type of variables (colour models such as RGB, HSL, & CMYK), and lightning conditions (covered [not exposed to light]/ light disturbed [non_covered])
+**Compute_FID_score_Pytorch_Submit** => Python script to compute FID scores between original and synthetic images 
 
-**Combined_All_Batch_Days_Smartphone** => Contains the combined data for all batches (3) and days (2, 4, 6, 8, 10, & 12) when using smartphone capturing device under various type of colour variables (colour models such as RGB, HSL, & CMYK), and lightning conditions (covered [not exposed to light]/ light disturbed [non_covered])
+**t-SNE_Resnet-50_method-wise_Submit** => Python script to generate t-SNE 2D plot from original and synthetic images based on Resnet-50
 
-# d) Datasets for SVM & XGBoost models
+**Train_Val_Graph_Confusion_matrix_Submit** => Python script to generate training and validation accuracy and loss learning curves along with confusion matrix
 
-**Data_Colour_index_Normalised (1V-Input)** => Contains the combined data for all batches (3) and days (2, 4, 6, 8, 10, & 12) when using various image capturing devices (digital camera/ smartphone), type of colour variables (colour models such as RGB, HSL, & CMYK), and lightning conditions (covered [not exposed to light]/ light disturbed [non_covered])
-
-**Data_Day_Colour_index_Normalised (2V-Input)** => Contains the combined data for all batches (3) and days (2, 4, 6, 8, 10, & 12) when using various image capturing devices (digital camera/ smartphone), type of colour variables (colour models such as RGB, HSL, & CMYK) with additonal 'Day' (period), and lightning conditions (covered [not exposed to light]/ light disturbed [non_covered])
-
-**Data_Abs_Day_Colour_index_Normalised (3V-Input)** => Contains the combined data for all batches (3) and days (2, 4, 6, 8, 10, & 12) when using various image capturing devices (digital camera/ smartphone), type of colour variables (colour models such as RGB, HSL, & CMYK) with additonal 'Day' (period),  'Abs' (absorbance), and lightning conditions (covered [not exposed to light]/ light disturbed [non_covered])
-
-# e) Original & Synthetic microalgae image datasets
-The google drive [https://drive.google.com/drive/folders/1QkzOmOO_flF0Y4V9MKVSmJOiIxR3vBM7?usp=sharing] contains microalgae original and synthetic image datasets for FID evaluation, t-SNE2D plot evaluation, and classification task. The image dataset is publicly available for academic and research purposes.
+# c) Original & Synthetic microalgae image datasets
+The google drive [https://drive.google.com/drive/folders/1QkzOmOO_flF0Y4V9MKVSmJOiIxR3vBM7?usp=sharing] contains microalgae original (1024 x 1024 pixels) and synthetic image datasets (256 x 256 pixels). Original and synthetic microalgae datasets cater to FID evaluation, t-SNE2D plot evaluation, and classification tasks. All training, validation, and testing results are also available here. The image dataset is publicly available for academic and research purposes.
 
 # Referencing and citation
 If you find the generation of synthetic microalgae images based on generative models (DDIM, FastGAN, and G-PixelCNN-VQVAE) useful in your research, please consider citing: Based on the DOI: *********Not published yet***********
