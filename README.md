@@ -1,7 +1,5 @@
 # Generating synthetic dataset for microalgae using generative models: A quantitative and qualitative evaluation with downstream classification
 
-By Jun Wei Roy Chong, Jun Rong Brian Chong, Kuan Shiong Khoo, Huong-Yong Ting, Iwamoto Koji, Zengling Ma, Pau Loke Show
-
 ******************* Not available at the moment ***********************
 ![Overall_Pipeline_V1](https://github.com/user-attachments/assets/f8a81909-f7a6-4b21-a1e6-6d919d3b1e89)
 
